@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meio Ambiente Sustentável</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>🌎 Meio Ambiente Sustentável</h1>
+    <p>Cuidar da natureza é garantir o futuro.</p>
+</header>
+
+<aside class="acessibilidade" aria-label="Controles de acessibilidade">
+    <button onclick="aumentarFonte()" aria-label="Aumentar tamanho do texto">A+</button>
+    <button onclick="diminuirFonte()" aria-label="Diminuir tamanho do texto">A-</button>
+    <button onclick="modoEscuro()" aria-label="Alternar modo escuro">🌙 Modo Escuro</button>
+</aside>
+
+<nav aria-label="Navegação principal">
+    <ul>
+        <li><button onclick="mostrarInfo('reciclagem')">♻️ Reciclagem</button></li>
+        <li><button onclick="mostrarInfo('agua')">💧 Água</button></li>
+        <li><button onclick="mostrarInfo('florestas')">🌳 Florestas</button></li>
+        <li><button onclick="mostrarInfo('energia')">⚡ Energia</button></li>
+    </ul>
+</nav>
+
+<main>
+    <article class="card">
+        <h2>Bem-vindo!</h2>
+        <p>
+            O meio ambiente é essencial para a vida no planeta.
+            Aqui você encontrará informações importantes sobre
+            sustentabilidade e preservação ambiental.
+        </p>
+    </article>
+
+    <article id="informacoes" class="card" aria-live="polite">
+        <h2>Selecione um tema acima</h2>
+        <p>As informações completas aparecerão aqui.</p>
+    </article>
+
+    <article class="card">
+        <h2>🌱 Dicas Sustentáveis</h2>
+        <button onclick="mostrarDica()">Mostrar Dica</button>
+        <p id="dica" aria-live="polite"></p>
+    </article>
+</main>
+
+<footer>
+    <p>🌍 Projeto Educação Ambiental &copy; 2026</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
